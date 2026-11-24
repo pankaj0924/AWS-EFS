@@ -92,7 +92,6 @@ sudo mount -a
 | Instance Connect: "Failed to connect" | SSH source was "My IP" | Use `13.233.177.0/29` |
 | Same error in a custom VPC | No internet gateway or route | Use default VPC, or add `0.0.0.0/0` to an IGW |
 | `yum install` times out | Outbound rule only allowed SSH | Outbound: All traffic to `0.0.0.0/0` |
-| "Failed to resolve fs-xxxx" | Placeholder or wrong ID used | Copy the real ID from the EFS console |
 | `mount` hangs, then times out | Mount target uses the wrong security group | Set `efs-lab-sg` on each mount target |
 
 ## Key Terms
